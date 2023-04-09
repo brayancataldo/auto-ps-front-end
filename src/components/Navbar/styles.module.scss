@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+        padding: 1rem;
+    }
+
+    .containerLogo {
+        width: 120px;
+    }
+
+    .containerHeader {
+        display: flex;
+        gap: 20px;
+    }
+
+    .userImage {
+        border-radius: 4px;
+    }
+
+    .containerProfile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bigButton {
+        display: flex;
+        border-radius: 6px;
+        padding: 14px;
+        // height: 100px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0%);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            /* filter: brightness(0.5); */
+            background-color: rgba(0, 0, 0, 50%);
+        }
+    }
+}
